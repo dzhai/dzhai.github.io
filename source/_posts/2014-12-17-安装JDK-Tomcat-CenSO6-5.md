@@ -57,14 +57,18 @@ export JAVA_HOME=/opt/jdk1.7.0_71
 
 ###让tomcat开机启动
 编辑 /etc/rc.d/rc.local
+
 ```
 $ sudo vi /etc/rc.d/rc.local 
-``` 
+```
+
 加入如下内容：
+
 ```
 export JAVA_HOME=/usr/local/jdk1.7.0_71 
 /opt/apache-tomcat-7.0.55/bin/startup.sh   
 ```
+
 ###设置Tomcat 内存大小
 要添加在tomcat 的bin 下catalina.sh 里，位置cygwin=false前 。注意引号要带上
 ```

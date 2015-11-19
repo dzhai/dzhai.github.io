@@ -38,7 +38,7 @@ This is important step before marching ahead. Create a normal text file in locat
 
 Now place the below configuration options in file. You can change the option’s values at your will.
 
-````
+```
 ##Which IP address(es) mongod should bind to. 
 bind_ip = 127.0.0.1
  
