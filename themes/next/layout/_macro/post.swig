@@ -73,7 +73,7 @@
 
                 {% set cat_length = post.categories.length %}
                 {% if cat_length > 1 and loop.index !== cat_length %}
-                  {{ __('symbol.comma') }}
+                  <span>{{ __('symbol.comma') }}<span>
                 {% endif %}
 
               {% endfor %}
@@ -111,7 +111,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                <span class="post-meta-item-text">{{__('post.visitors')}} </span>
-               <span class="leancloud-visitors-count"></span>
+               <span class="leancloud-visitors-count">0</span>
               </span>
           {% endif %}
         </div>

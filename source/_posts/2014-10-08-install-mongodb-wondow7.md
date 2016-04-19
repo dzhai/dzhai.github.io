@@ -64,6 +64,7 @@ diaglog=3
 ##Only set this to false if you don’t really care about your data (or more so, the loss of it).
 journal = true
 ```
+
 ##Start/Shutdown the MongoDB Server
 
 To **start the MongoDB server**, use below command in command prompt:

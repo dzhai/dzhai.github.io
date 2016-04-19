@@ -61,7 +61,10 @@ export JAVA_HOME=/opt/jdk1.7.0_71
 ```
 $ sudo vi /etc/rc.d/rc.local 
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6e04f0a8061a23e3bc4e4857e17ba517122d69f3
 加入如下内容：
 
 ```
