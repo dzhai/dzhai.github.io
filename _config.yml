@@ -5,7 +5,8 @@
 # Site
 title: dzhai
 #subtitle: 不是因为喜欢而在一起 而是因为在一起喜欢
-subtitle: 再牛逼的梦想，也抵不住傻逼似得坚持
+#subtitle: 再牛逼的梦想，也抵不住傻逼似得坚持
+subtitle: 宁静致远
 description: 大翟
 author: dzhai
 email: 347112281@qq.com
@@ -85,8 +86,8 @@ archive_generator:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-#daisy  nut jacman landscape
-theme: next
+#daisy  nut jacman landscape next
+theme: daisy
 exclude_generator: about
 
 # Markdown
