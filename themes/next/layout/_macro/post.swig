@@ -73,7 +73,7 @@
 
                 {% set cat_length = post.categories.length %}
                 {% if cat_length > 1 and loop.index !== cat_length %}
-                  <span>{{ __('symbol.comma') }}<span>
+                  {{ __('symbol.comma') }}
                 {% endif %}
 
               {% endfor %}
@@ -111,7 +111,14 @@
                  <i class="fa fa-eye"></i>
                </span>
                <span class="post-meta-item-text">{{__('post.visitors')}} </span>
-               <span class="leancloud-visitors-count">0</span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          {% endif %}
+
+          {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
+              &nbsp; | &nbsp;
+              <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
               </span>
           {% endif %}
         </div>
@@ -144,14 +151,14 @@
         {% if post.description %}
           {{ post.description }}
           <div class="post-more-link text-center">
-            <a class="btn" href="{{ url_for(post.path) }}" style="border:none;">
+            <a class="btn" href="{{ url_for(post.path) }}">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
         {% elif post.excerpt  %}
           {{ post.excerpt }}
           <div class="post-more-link text-center">
-            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents" style="border:none;">
+            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
@@ -161,7 +168,7 @@
           {% if content.length > theme.auto_excerpt.length %}...{% endif %}
 
           <div class="post-more-link text-center">
-            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents" style="border:none;">
+            <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
@@ -175,6 +182,18 @@
       {% else %}
         {{ post.content }}
       {% endif  %}
+    </div>
+    
+    <div>
+      {% if ! is_index %}
+        {% include 'wechat-subscriber.swig' %}
+      {% endif %}
+    </div>
+
+    <div>
+      {% if ! is_index %}
+        {% include 'reward.swig' %}
+      {% endif %}
     </div>
 
     <footer class="post-footer">
