@@ -18,6 +18,4 @@ comment_provider: duoshuo
 # Duoshuo comment
 duoshuo:
   short_name: dzhai
-  
-addthis: 
-  enable: true
+  share: true
