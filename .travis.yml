@@ -16,7 +16,7 @@ install:
   # Use sed to replace the SSH URL with the public URL, then initialize submodules
   #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   #- git submodule update --init --recursive
-  - sed -i 's/git@github.com:/https:\/\/github.com\//'
+  - git clone -b master git@github.com:dzhai/www.dzhai.net.git .deploy_git
   - npm install -g hexo-cli
   - npm install
 
