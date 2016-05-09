@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <!--<h2 class="archive-title tag"><%= page.title %></h2>  -->
+    <article class="archive">
+	    <div class="post-content">
+			<div class="entry">
+				<% if(site.categories.length) { %>
+					<%- list_categories(site.categories) %>
+				<% } %>
+			</div>
+		</div>
+		<footer>
+			<div class="alignleft"></div>
+		    <div class="alignright">  
+			    <!-- <%- partial('_partial/post/duoshuo_share') %> -->
+		    </div>
+		    <div class="clearfix"></div>
+		</footer>
+    </article>
+</div>
+<%- partial('_partial/comment') %>

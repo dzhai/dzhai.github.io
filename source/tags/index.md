@@ -1,4 +1,4 @@
-title: All tags
-date: 2014-12-22 12:39:04
+layout: tags
+title: 标签
 type: "tags"
 ---

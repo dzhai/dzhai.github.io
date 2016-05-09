@@ -30,8 +30,17 @@ if (page.archive) {
       <a href="<%- config.root %><%- item.path %>"><%= item.title %></a>
       </li>
   <% }); %>
+		<footer>
+			<div class="alignleft"></div>
+		    <div class="alignright">  
+			     <!-- <%- partial('post/duoshuo_share') %> -->				
+		    </div>
+		    <div class="clearfix"></div>
+		</footer>
   </article>
 <% } %>
+
+<%- partial('comment', {comments:true}) %>
 
 
 

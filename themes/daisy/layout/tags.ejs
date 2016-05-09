@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <!-- <h2 class="archive-title tag"><%= page.title %></h2> --> 
+    <article class="archive">
+	    <div class="layout-wrap-inner tag-cloud">
+		<% if(site.tags.length) { %>
+		  <%- tagcloud({min_font: 14, max_font: 28}) %>
+		<% } %>
+	    </div>
+		<footer>
+			<div class="alignleft"></div>
+		    <div class="alignright">  
+			    <!-- <%- partial('_partial/post/duoshuo_share') %> -->
+		    </div>
+		    <div class="clearfix"></div>
+		</footer>
+    </article>
+</div>
+<%- partial('_partial/comment') %>
