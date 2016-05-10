@@ -17,4 +17,10 @@ comment_provider: duoshuo
 # Duoshuo comment
 duoshuo:
   short_name: dzhai
-  share: true
+  share: true 
+
+# 打赏
+author: 翟春龙
+reward_comment: ''
+wechatpay: /resource/images/reward/wechat.jpg
+alipay: /resource/images/reward/alipay.jpg
