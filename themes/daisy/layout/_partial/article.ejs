@@ -23,7 +23,9 @@
       </footer>
       <% } %>
     <% } else { %>
-	<%- partial('post/reward') %>
+	<% if (item.layout != 'page'){ %>
+		<%- partial('post/reward') %>
+	<% } %>
     <footer>
       <div class="alignleft">
       <%- partial('post/category') %>
