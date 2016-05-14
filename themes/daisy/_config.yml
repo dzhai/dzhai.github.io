@@ -24,3 +24,9 @@ author: 翟春龙
 reward_comment: ''
 wechatpay: /resource/images/reward/wechat.png
 alipay: /resource/images/reward/alipay.png
+
+#### Toc
+toc:
+  article: true   ## show contents in article.
+  maxDepth: 3
+  show: true

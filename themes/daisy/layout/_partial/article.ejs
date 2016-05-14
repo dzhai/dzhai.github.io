@@ -1,3 +1,6 @@
+<% if (item.layout != 'page' && item.layout=='post' && !index){ %>
+	<%- partial('post/toc') %>
+<% } %>
 <article class="<%= item.layout %>">
   <div class="post-content">
     <header>

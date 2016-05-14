@@ -1,0 +1,10 @@
+<% if(theme.toc.show){ %>
+	<div id="toc" class="toc-article">
+	<strong class="toc-title"><%= __('文章目录') %></strong>
+	<% if(item.list_number == false) {%>
+		<%- toc(item.content,{list_number:false}) %>
+	<% }else{ %>
+		<%- toc(item.content) %>
+	<% } %>
+	</div>
+<% } %>
