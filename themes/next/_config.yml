@@ -220,6 +220,12 @@ auto_excerpt:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
+# 打赏
+author: 翟春龙
+reward_comment: ''
+wechatpay: /resource/images/reward/wechat.png
+alipay: /resource/images/reward/alipay.png
+
 # MathJax Support
 mathjax:
   enable: false
