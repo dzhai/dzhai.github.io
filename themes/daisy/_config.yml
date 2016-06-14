@@ -30,3 +30,10 @@ toc:
   article: true   ## show contents in article.
   maxDepth: 3
   show: true
+  
+  
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night eighties
